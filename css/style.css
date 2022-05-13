@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #000;
+    font-family: 'Comfortaa';
+    overflow-x: hidden;
+}
+
+video{
+    padding: none !important;
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 45px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.1s ease;
+}
+a:hover{
+    color: #FF3B5E;
+}
+
+button{
+    border-radius:10px;
+    background: #FF3B5E;
+    color: #fff;
+    padding: 16px 30px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    transition: 0.1s ease;
+    
+}
+button:hover{
+    background: #FF708A;
+}
+button:active{
+    background-color: #DA3351;
+}
+button:disabled,
+button[disabled]{
+  background-color: #909090;
+}
+
+input, textarea{
+    padding: 20px;
+    border: 2px solid #D6D6D6;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 22px;
+    font-family: 'Comfortaa';
+    outline: none;
+}
+input:focus{
+    border: 2px solid #FF3B5E;
+}
+textarea{
+    height: 280px;
+ }
+textarea:focus{
+    border: 2px solid #FF3B5E;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.top{
+    margin-top: 150px;
+}
+
+/*___ PRELOADER ___*/
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 4s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #FF3B5E;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+  
+/* ____  Header _____ */
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: #FEF8F9;
+}
+.nav{
+    padding-top: 60px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone-header{justify-content: flex-end;}
+.nav ul{
+    display: flex;
+    padding: 0;
+}
+.nav ul li{
+    margin-left: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav ul li p:hover{
+    color: #FF3B5E;
+}
+.nav ul li:first-child{
+    margin-left: 0px;
+}
+.nav ul a{
+    display: flex;
+    align-items: center;
+}
+.nav ul a li{
+    margin-left: 20px;
+}
+.nav ul a li p{
+    margin: 0px;
+}
+
+.title p{width: 500px; margin-top: 20px; margin-bottom: 40px;}
+
+.offset{
+    margin-top: 250px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-offset{
+    position: absolute;
+    right: 0;
+}
+.image-offset img{
+    z-index: 5;
+    position: relative;
+    width: 800px;
+}
+.stroke{
+    z-index: 2;
+    position: absolute;
+    border: 4px solid #FF3B5E;
+    width: 810px;
+    height: 450px;
+    border-radius: 10px;
+    top: 100px;
+    right: 50px;
+}
+
+
+/* ____ Section Video ____ */
+
+.video-block h2, .inform-block h2{ margin-bottom: 60px;}
+.progresses {
+    display: flex;
+    width: 100% !important;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #D6D6D6;
+    background-image: linear-gradient(to right, #FF3B5E, #FF3B5E);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.4s ease-in-out;
+  }
+
+  .buttons-slider{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: -110px;
+      top: 350px;
+      width: 1500px;
+  }
+  .rotate{
+      transform: rotate(180deg);
+  }
+
+  .panel-container{
+      position: relative;
+  }
+  
+.etabs{
+    margin-bottom: 60px;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.etabs::-webkit-scrollbar {
+    width: 0;
+  }
+.etabs li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.etabs li:first-child{
+    margin-left: 0px;
+}
+.etabs li a{
+    font-size: 26px;
+    font-weight: 400;
+}
+.etabs li:hover{
+    color: #FF3B5E;
+} 
+.underline{
+    border: 1px solid #FF3B5E;
+    background: #FF3B5E;
+    width: 1px;
+    width: 100%;
+    opacity: 0;
+}
+.active .underline{
+    opacity: 1;
+}
+
+.products-block div{
+    width: 100%;
+}
+.products-block h2{
+    margin-top: 50px;
+}
+.products-block video{
+    width: 100%;
+}
+.prev, .next:hover{cursor: pointer;}
+
+
+/* ____ Section Information _____*/
+
+.form-section{
+    width: 100%;
+    padding: 150px 0;
+    background: #FEF8F9;
+}
+
+.information-title {text-align: left;}
+.information-title h3{margin-top: 40px;}
+
+.social-me a{margin-left: 18px;}
+.social-me{margin-top: 10px;}
+.social-me a:first-child{margin-left: 0px;}
+
+.img-ava{
+    position: relative;
+}
+.img-ava img{position: relative; z-index: 2;}
+.stroke-information{
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    border: 4px solid #FF3B5E;
+    border-radius: 10px;
+    width: 500px;
+    height: 700px;
+}
+
+
+/* ____ FORM ____*/
+
+.form-section h2{margin-bottom: 60px;}
+.form-row input{margin-top: 24px;}
+.form-row input:first-child{margin-top: 0;}
+.right-inputs button{
+    float: right;
+    margin-top: 20px;
+}
+
+
+/* ___ FOOTER ___*/
+
+footer{margin-bottom: 60px;}
+footer ul{display: flex;}
+footer ul li{list-style: none; margin-left: 40px;}
+footer ul li:first-child{margin-left: 0px;}
+
+.social{display: flex; justify-content: flex-end;}
+.social img{
+    width: 36px;
+    margin-left: 20px;
+}

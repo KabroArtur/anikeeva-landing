@@ -1,0 +1,102 @@
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 1140px;
+	}
+    .image-offset img{
+        width: 700px;
+    }
+    .stroke{
+        width: 650px;
+        height: 370px;
+        top: 100px;
+        right: 80px;
+    }
+    .stroke-information{
+        width: 450px;
+    } 
+    .img-ava img{width: 90%;}
+    
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+    .image-offset img{
+        width: 500px;
+    }
+    .stroke{
+        width: 450px;
+        height: 250px;
+        top: 100px;
+        right: 80px;
+    } 
+    .img-ava img{width: 100%;}
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+    .stroke{
+        display: none;
+    }
+    .disp-none{display: none;}
+    .information-title{margin-top: 30px}
+    video{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+    .offset{
+        flex-direction:column;
+        margin-top: 80px;
+        width: 100%;
+        text-align: center;
+    }
+    .offset div{width: 100%;}
+    .offset div img{width: 100%;}
+    .title p{width: 100%;}
+    .nav .disp-none-links{display: none;}
+    .nav .phone-header{text-align: center; justify-content: center; width: 100%;}
+    .image-offset{
+        position: relative;
+    }
+    .title button{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .right-inputs{margin-top: 24px;}
+    .right-inputs button{width: 100%;}
+
+    .footer-content{justify-content: center; margin-top: 40px;}
+    .footer-content:first-child{margin-top: 0px;}
+    .image-offset img{border-radius: 10px;}
+    
+}
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+   .nav .disp-none-footer{display: none;}
+   .footer-top{margin-top: 0px; margin-bottom: 60px;}
+   
+   video{
+    height: 300px;
+}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+	}
+    .img-ava img{width: 100%;}
+    video{
+        height: 200px;
+    }
+}
+
